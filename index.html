@@ -4,40 +4,182 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Darts Analyzer: Throw Coach</title>
-<meta name="description" content="Darts dobáselemző iPhone-ra – a telefon kamerájával méri, mennyire egyforma a dobásod. / Darts throw analysis for iPhone.">
+<meta name="description" content="Darts dobáselemző iPhone-ra: csontvázas visszanézés, konzisztencia-index, edzésterv. / Darts throw analysis for iPhone.">
+<meta property="og:title" content="Darts Analyzer: Throw Coach">
+<meta property="og:description" content="Your personal darts throw coach for iPhone.">
+<meta property="og:image" content="https://dartsanalyzer.app/img/01.jpg">
 <link rel="icon" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="wrap">
+<body class="home">
+<div class="wrap wide">
   <header class="top">
     <img src="icon.png" alt="">
-    <div class="name">Darts Analyzer: Throw Coach<small>iPhone</small></div>
-    <nav class="lang"><a href="#hu">Magyar</a><a href="#en">English</a></nav>
+    <div class="name">Darts Analyzer<small>Throw Coach · iPhone</small></div>
+    <nav class="lang">
+      <button type="button" data-set-lang="hu">Magyar</button>
+      <button type="button" data-set-lang="en">English</button>
+    </nav>
   </header>
 
-  <section id="hu">
-    <h1>A személyes dobásedződ</h1>
-    <p>Az app a telefonod kamerájával felveszi a dobásodat, csontvázat rajzol rá, és megméri, mennyire egyforma: hol engeded el a nyilat, mit csinál a könyököd, a fejed és a ritmusod. Minden a telefonodon történik – nincs fiók, nincs szerver.</p>
-    <div class="grid">
-      <div class="card"><h3>Adatvédelem</h3><p class="muted">Mit kezel az app, és hol tárolja.</p><a href="privacy.html#hu">Adatvédelmi tájékoztató →</a></div>
-      <div class="card"><h3>Súgó és kapcsolat</h3><p class="muted">Gyakori kérdések, előfizetés, elérhetőség.</p><a href="support.html#hu">Támogatás →</a></div>
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow" data-hu="iPhone app · darts" data-en="iPhone app · darts">iPhone app · darts</p>
+      <h1 data-hu="A személyes <span>dobásedződ</span>" data-en="Your personal <span>throw coach</span>">A személyes <span>dobásedződ</span></h1>
+      <p class="lead"
+         data-hu="Tedd le a telefont oldalra, dobj 3 nyilat, és lásd lassítva, csontvázzal, mennyire egyformán dobsz. Az app megmutatja, min dolgozz – a könyöködön, a ritmusodon vagy az elengedésen."
+         data-en="Put your phone to the side, throw 3 darts and see in slow motion, with a skeleton, how consistent you are. The app shows what to work on – your elbow, your rhythm or your release.">Tedd le a telefont oldalra, dobj 3 nyilat, és lásd lassítva, csontvázzal, mennyire egyformán dobsz. Az app megmutatja, min dolgozz – a könyöködön, a ritmusodon vagy az elengedésen.</p>
+      <div class="cta">
+        <span class="btn soon" data-hu="Hamarosan az App Store-ban" data-en="Coming soon to the App Store">Hamarosan az App Store-ban</span>
+      </div>
+      <p class="small" data-hu="Ingyenes elemzés és korlátlan mentés · PRO 14 napig ingyen" data-en="Free analysis and unlimited saving · PRO free for 14 days">Ingyenes elemzés és korlátlan mentés · PRO 14 napig ingyen</p>
+    </div>
+
+    <div class="showcase">
+      <div class="phone-row">
+        <button class="arrow" type="button" data-dir="-1" aria-label="Előző / Previous">‹</button>
+        <div class="phone" aria-roledescription="carousel">
+          <div class="island"></div>
+          <div class="screen">
+            <div class="track" id="track"></div>
+          </div>
+        </div>
+        <button class="arrow" type="button" data-dir="1" aria-label="Következő / Next">›</button>
+      </div>
+      <p class="caption" id="caption" aria-live="polite"></p>
+      <div class="dots" id="dots"></div>
     </div>
   </section>
 
-  <hr>
-
-  <section id="en" lang="en">
-    <h1>Your personal throw coach</h1>
-    <p>The app films your throw with your phone's camera, draws a skeleton over it and measures how consistent you are: where you release the dart and what your elbow, head and rhythm are doing. Everything happens on your phone – no account, no server.</p>
-    <div class="grid">
-      <div class="card"><h3>Privacy</h3><p class="muted">What the app handles and where it's stored.</p><a href="privacy.html#en">Privacy policy →</a></div>
-      <div class="card"><h3>Help &amp; contact</h3><p class="muted">FAQ, subscriptions, how to reach us.</p><a href="support.html#en">Support →</a></div>
+  <section class="features">
+    <div class="card">
+      <h3 data-hu="Lassítva, csontvázzal" data-en="Slow motion, with a skeleton">Lassítva, csontvázzal</h3>
+      <p data-hu="Visszanézed a dobásodat a kezed útjával; PRO-val az adatok a videón, képkockánként." data-en="Replay your throw with your hand path; with PRO the data sits on the video, frame by frame.">Visszanézed a dobásodat a kezed útjával; PRO-val az adatok a videón, képkockánként.</p>
+    </div>
+    <div class="card">
+      <h3 data-hu="Mér, nem találgat" data-en="Measures, doesn't guess">Mér, nem találgat</h3>
+      <p data-hu="Elengedési pont, ritmus, könyök, fej, hőtérkép és egy konzisztencia-index 0-tól 100-ig." data-en="Release point, rhythm, elbow, head, heatmap and a consistency index from 0 to 100.">Elengedési pont, ritmus, könyök, fej, hőtérkép és egy konzisztencia-index 0-tól 100-ig.</p>
+    </div>
+    <div class="card">
+      <h3 data-hu="A te célodra edz" data-en="Coaches your goal">A te célodra edz</h3>
+      <p data-hu="Mondd meg, min dolgozol, és az app ezt követi – edzéstervvel a leggyengébb pontodra." data-en="Tell it what you're working on and the app tracks it – with a drill for your weakest point.">Mondd meg, min dolgozol, és az app ezt követi – edzéstervvel a leggyengébb pontodra.</p>
+    </div>
+    <div class="card">
+      <h3 data-hu="Nálad marad" data-en="Stays with you">Nálad marad</h3>
+      <p data-hu="Nincs fiók, nincs feltöltés, nincs reklám. A videóid a telefonodon maradnak." data-en="No account, no uploads, no ads. Your videos stay on your phone.">Nincs fiók, nincs feltöltés, nincs reklám. A videóid a telefonodon maradnak.</p>
     </div>
   </section>
 
-  <footer>© 2026 Richard Laki</footer>
+  <section class="info">
+    <a class="card link" href="privacy.html">
+      <h3 data-hu="Adatvédelem" data-en="Privacy">Adatvédelem</h3>
+      <p class="muted" data-hu="Mit kezel az app, és hol tárolja." data-en="What the app handles and where it's stored.">Mit kezel az app, és hol tárolja.</p>
+    </a>
+    <a class="card link" href="support.html">
+      <h3 data-hu="Súgó és kapcsolat" data-en="Help &amp; contact">Súgó és kapcsolat</h3>
+      <p class="muted" data-hu="Gyakori kérdések, előfizetés, elérhetőség." data-en="FAQ, subscriptions, how to reach us.">Gyakori kérdések, előfizetés, elérhetőség.</p>
+    </a>
+  </section>
+
+  <footer>
+    <span class="email">support@dartsanalyzer.app</span> ·
+    <span data-hu="Üzleti megkeresések:" data-en="Business enquiries:">Üzleti megkeresések:</span>
+    <span class="email">marketing@dartsanalyzer.app</span><br>
+    © 2026 Laki Richárd
+  </footer>
 </div>
+
+<script>
+(function () {
+  var slides = [
+    ["Lassítva, csontvázzal és a kezed útjával", "Slow motion with skeleton and hand path"],
+    ["Az eredmény a céloddal kezdődik", "Your result starts with your goal"],
+    ["Mondd meg, min dolgozol", "Tell it what you're working on"],
+    ["Minden fontos szám egy oldalon", "All the key numbers on one page"],
+    ["Minden köröd megmarad", "Every round is kept"],
+    ["Beépített pontszámláló kiszálló-javaslattal", "Built-in scorer with checkout suggestions"],
+    ["Felülnézeti rajz: hova tedd a telefont", "Top-view diagram: where to put the phone"],
+    ["Kezdőlap: index, szint, sorozat, heti cél", "Home: index, level, streak, weekly goal"],
+    ["Bemutató: a legutóbbi köröd egy pillantásra", "Tour: your latest round at a glance"],
+    ["Bemutató: egy koppintás az új körhöz", "Tour: one tap to a new round"],
+    ["Bemutató: felvétel és beállás-ellenőrzés", "Tour: recording with setup checks"],
+    ["Bemutató: a statisztikák", "Tour: your stats"],
+    ["Bemutató: a köreid visszanézése", "Tour: replaying your rounds"],
+    ["Bemutató: a pontszámláló", "Tour: the scorer"],
+    ["Bemutató: ingyenes vagy PRO", "Tour: free or PRO"],
+    ["Bemutató: a profilod", "Tour: your profile"],
+    ["Bemutató: súgó a pontos méréshez", "Tour: help for accurate measuring"]
+  ];
+  var track = document.getElementById('track');
+  var dots = document.getElementById('dots');
+  var caption = document.getElementById('caption');
+  var index = 0;
+  var lang = 'hu';
+
+  slides.forEach(function (s, i) {
+    var img = document.createElement('img');
+    img.src = 'img/' + String(i + 1).padStart(2, '0') + '.jpg';
+    img.alt = s[1];
+    img.loading = i < 2 ? 'eager' : 'lazy';
+    img.draggable = false;
+    track.appendChild(img);
+    var dot = document.createElement('button');
+    dot.type = 'button';
+    dot.setAttribute('aria-label', String(i + 1));
+    dot.addEventListener('click', function () { go(i); });
+    dots.appendChild(dot);
+  });
+
+  function go(i) {
+    index = (i + slides.length) % slides.length;
+    track.style.transform = 'translateX(' + (-100 * index) + '%)';
+    caption.textContent = slides[index][lang === 'hu' ? 0 : 1];
+    Array.prototype.forEach.call(dots.children, function (d, k) {
+      d.classList.toggle('on', k === index);
+    });
+  }
+
+  document.querySelectorAll('.arrow').forEach(function (b) {
+    b.addEventListener('click', function () { go(index + Number(b.dataset.dir)); });
+  });
+  document.querySelector('.phone').addEventListener('click', function (e) {
+    var r = this.getBoundingClientRect();
+    go(index + (e.clientX - r.left > r.width / 2 ? 1 : -1));
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') go(index + 1);
+    if (e.key === 'ArrowLeft') go(index - 1);
+  });
+
+  // Ujjal húzás telefonon.
+  var startX = null;
+  var screen = document.querySelector('.screen');
+  screen.addEventListener('touchstart', function (e) { startX = e.touches[0].clientX; }, { passive: true });
+  screen.addEventListener('touchend', function (e) {
+    if (startX === null) return;
+    var dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 40) { e.preventDefault(); go(index + (dx < 0 ? 1 : -1)); }
+    startX = null;
+  });
+
+  function setLang(l) {
+    lang = l;
+    document.documentElement.lang = l;
+    document.querySelectorAll('[data-' + l + ']').forEach(function (el) {
+      el.innerHTML = el.getAttribute('data-' + l);
+    });
+    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+      b.classList.toggle('on', b.dataset.setLang === l);
+    });
+    go(index);
+  }
+  document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.dataset.setLang); });
+  });
+  var preferred = (navigator.language || 'en').toLowerCase().indexOf('hu') === 0 ? 'hu' : 'en';
+  setLang(preferred);
+})();
+</script>
 </body>
 </html>
