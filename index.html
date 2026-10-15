@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="hu">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Darts Analyzer: Throw Coach</title>
-<meta name="description" content="Darts dobáselemző iPhone-ra: csontvázas visszanézés, konzisztencia-index, edzésterv. / Darts throw analysis for iPhone.">
+<meta name="description" content="Darts throw analysis for iPhone: skeleton replay, consistency index and drills.">
 <meta property="og:title" content="Darts Analyzer: Throw Coach">
 <meta property="og:description" content="Your personal darts throw coach for iPhone.">
 <meta property="og:image" content="https://dartsanalyzer.app/img/01.jpg">
@@ -26,26 +26,25 @@
   <section class="hero">
     <div class="hero-text">
       <p class="eyebrow" data-hu="iPhone app · darts" data-en="iPhone app · darts">iPhone app · darts</p>
-      <h1 data-hu="A személyes <span>dobásedződ</span>" data-en="Your personal <span>throw coach</span>">A személyes <span>dobásedződ</span></h1>
+      <h1 data-hu="A személyes <span>dobásedződ</span>" data-en="Your personal <span>throw coach</span>">Your personal <span>throw coach</span></h1>
       <p class="lead"
-         data-hu="Tedd le a telefont oldalra, dobj 3 nyilat, és lásd lassítva, csontvázzal, mennyire egyformán dobsz. Az app megmutatja, min dolgozz – a könyöködön, a ritmusodon vagy az elengedésen."
-         data-en="Put your phone to the side, throw 3 darts and see in slow motion, with a skeleton, how consistent you are. The app shows what to work on – your elbow, your rhythm or your release.">Tedd le a telefont oldalra, dobj 3 nyilat, és lásd lassítva, csontvázzal, mennyire egyformán dobsz. Az app megmutatja, min dolgozz – a könyöködön, a ritmusodon vagy az elengedésen.</p>
+         data-hu="Tedd le a telefont oldalra, dobj 3 nyilat, és lásd lassítva, csontvázzal, mennyire egyformán dobsz. Az app megmutatja, min dolgozz – a könyöködön, a ritmusodon vagy az elengedésen." data-en="Put your phone to the side, throw 3 darts and see in slow motion, with a skeleton, how consistent you are. The app shows what to work on – your elbow, your rhythm or your release.">Put your phone to the side, throw 3 darts and see in slow motion, with a skeleton, how consistent you are. The app shows what to work on – your elbow, your rhythm or your release.</p>
       <div class="cta">
-        <span class="btn soon" data-hu="Hamarosan az App Store-ban" data-en="Coming soon to the App Store">Hamarosan az App Store-ban</span>
+        <span class="btn soon" data-hu="Hamarosan az App Store-ban" data-en="Coming soon to the App Store">Coming soon to the App Store</span>
       </div>
-      <p class="small" data-hu="Ingyenes elemzés és korlátlan mentés · PRO 14 napig ingyen" data-en="Free analysis and unlimited saving · PRO free for 14 days">Ingyenes elemzés és korlátlan mentés · PRO 14 napig ingyen</p>
+      <p class="small" data-hu="Ingyenes elemzés és korlátlan mentés · PRO 14 napig ingyen" data-en="Free analysis and unlimited saving · PRO free for 14 days">Free analysis and unlimited saving · PRO free for 14 days</p>
     </div>
 
     <div class="showcase">
       <div class="phone-row">
-        <button class="arrow" type="button" data-dir="-1" aria-label="Előző / Previous">‹</button>
+        <button class="arrow" type="button" data-dir="-1" aria-label="Previous">‹</button>
         <div class="phone" aria-roledescription="carousel">
           <div class="island"></div>
           <div class="screen">
             <div class="track" id="track"></div>
           </div>
         </div>
-        <button class="arrow" type="button" data-dir="1" aria-label="Következő / Next">›</button>
+        <button class="arrow" type="button" data-dir="1" aria-label="Next">›</button>
       </div>
       <p class="caption" id="caption" aria-live="polite"></p>
       <div class="dots" id="dots"></div>
@@ -54,39 +53,39 @@
 
   <section class="features">
     <div class="card">
-      <h3 data-hu="Lassítva, csontvázzal" data-en="Slow motion, with a skeleton">Lassítva, csontvázzal</h3>
-      <p data-hu="Visszanézed a dobásodat a kezed útjával; PRO-val az adatok a videón, képkockánként." data-en="Replay your throw with your hand path; with PRO the data sits on the video, frame by frame.">Visszanézed a dobásodat a kezed útjával; PRO-val az adatok a videón, képkockánként.</p>
+      <h3 data-hu="Lassítva, csontvázzal" data-en="Slow motion, with a skeleton">Slow motion, with a skeleton</h3>
+      <p data-hu="Visszanézed a dobásodat a kezed útjával; PRO-val te választod ki, milyen adatok látszanak a videón, képkockánként." data-en="Replay your throw with your hand path; with PRO you choose which data appears on the video, frame by frame.">Replay your throw with your hand path; with PRO you choose which data appears on the video, frame by frame.</p>
     </div>
     <div class="card">
-      <h3 data-hu="Mér, nem találgat" data-en="Measures, doesn't guess">Mér, nem találgat</h3>
-      <p data-hu="Elengedési pont, ritmus, könyök, fej, hőtérkép és egy konzisztencia-index 0-tól 100-ig." data-en="Release point, rhythm, elbow, head, heatmap and a consistency index from 0 to 100.">Elengedési pont, ritmus, könyök, fej, hőtérkép és egy konzisztencia-index 0-tól 100-ig.</p>
+      <h3 data-hu="Mér, nem találgat" data-en="Measures, doesn't guess">Measures, doesn't guess</h3>
+      <p data-hu="Elengedési pont, ritmus, könyök, fej, hőtérkép, konzisztencia-index 0-tól 100-ig – és megmondja, jó lett-e a felvétel." data-en="Release point, rhythm, elbow, head, heatmap, a consistency index from 0 to 100 – and it tells you if the recording was good.">Release point, rhythm, elbow, head, heatmap, a consistency index from 0 to 100 – and it tells you if the recording was good.</p>
     </div>
     <div class="card">
-      <h3 data-hu="A te célodra edz" data-en="Coaches your goal">A te célodra edz</h3>
-      <p data-hu="Mondd meg, min dolgozol, és az app ezt követi – edzéstervvel a leggyengébb pontodra." data-en="Tell it what you're working on and the app tracks it – with a drill for your weakest point.">Mondd meg, min dolgozol, és az app ezt követi – edzéstervvel a leggyengébb pontodra.</p>
+      <h3 data-hu="A te célodra edz" data-en="Coaches your goal">Coaches your goal</h3>
+      <p data-hu="Mondd meg, min dolgozol, és az app ezt követi – edzéstervvel a leggyengébb pontodra." data-en="Tell it what you're working on and the app tracks it – with a drill for your weakest point.">Tell it what you're working on and the app tracks it – with a drill for your weakest point.</p>
     </div>
     <div class="card">
-      <h3 data-hu="Nálad marad" data-en="Stays with you">Nálad marad</h3>
-      <p data-hu="Nincs fiók, nincs feltöltés, nincs reklám. A videóid a telefonodon maradnak." data-en="No account, no uploads, no ads. Your videos stay on your phone.">Nincs fiók, nincs feltöltés, nincs reklám. A videóid a telefonodon maradnak.</p>
+      <h3 data-hu="Nálad marad" data-en="Stays with you">Stays with you</h3>
+      <p data-hu="Nincs fiók, nincs feltöltés, nincs reklám. A videóid a telefonodon maradnak." data-en="No account, no uploads, no ads. Your videos stay on your phone.">No account, no uploads, no ads. Your videos stay on your phone.</p>
     </div>
   </section>
 
   <section class="info">
     <a class="card link" href="privacy.html">
-      <h3 data-hu="Adatvédelem" data-en="Privacy">Adatvédelem</h3>
-      <p class="muted" data-hu="Mit kezel az app, és hol tárolja." data-en="What the app handles and where it's stored.">Mit kezel az app, és hol tárolja.</p>
+      <h3 data-hu="Adatvédelem" data-en="Privacy">Privacy</h3>
+      <p class="muted" data-hu="Mit kezel az app, és hol tárolja." data-en="What the app handles and where it's stored.">What the app handles and where it's stored.</p>
     </a>
     <a class="card link" href="support.html">
-      <h3 data-hu="Súgó és kapcsolat" data-en="Help &amp; contact">Súgó és kapcsolat</h3>
-      <p class="muted" data-hu="Gyakori kérdések, előfizetés, elérhetőség." data-en="FAQ, subscriptions, how to reach us.">Gyakori kérdések, előfizetés, elérhetőség.</p>
+      <h3 data-hu="Súgó és kapcsolat" data-en="Help &amp; contact">Help &amp; contact</h3>
+      <p class="muted" data-hu="Gyakori kérdések, előfizetés, elérhetőség." data-en="FAQ, subscriptions, how to reach us.">FAQ, subscriptions, how to reach us.</p>
     </a>
   </section>
 
   <footer>
     <span class="email">support@dartsanalyzer.app</span> ·
-    <span data-hu="Üzleti megkeresések:" data-en="Business enquiries:">Üzleti megkeresések:</span>
+    <span data-hu="Üzleti megkeresések:" data-en="Business enquiries:">Business enquiries:</span>
     <span class="email">marketing@dartsanalyzer.app</span><br>
-    © 2026 Laki Richárd
+    <span data-hu="© 2026 Laki Richárd" data-en="© 2026 Richárd Laki">© 2026 Richárd Laki</span>
   </footer>
 </div>
 
@@ -165,6 +164,7 @@
 
   function setLang(l) {
     lang = l;
+    try { localStorage.setItem('lang', l); } catch (e) {}
     document.documentElement.lang = l;
     document.querySelectorAll('[data-' + l + ']').forEach(function (el) {
       el.innerHTML = el.getAttribute('data-' + l);
@@ -177,8 +177,11 @@
   document.querySelectorAll('[data-set-lang]').forEach(function (b) {
     b.addEventListener('click', function () { setLang(b.dataset.setLang); });
   });
-  var preferred = (navigator.language || 'en').toLowerCase().indexOf('hu') === 0 ? 'hu' : 'en';
-  setLang(preferred);
+  // Alapból angol; a választást megjegyezzük, és a #hu / #en cím is működik.
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  var fromHash = location.hash === '#hu' ? 'hu' : (location.hash === '#en' ? 'en' : null);
+  setLang(fromHash || saved || 'en');
 })();
 </script>
 </body>
