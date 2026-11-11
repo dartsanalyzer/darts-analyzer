@@ -129,3 +129,11 @@ body.home footer .email { white-space: nowrap; word-break: normal; }
   nav.lang { flex-wrap: nowrap; gap: 4px; }
   nav.lang button, nav.lang a { padding: 5px 10px; font-size: 13px; }
 }
+
+/* App Store-képek: saját kerettel és felirattal készültek, ezért itt
+   nincs külön telefonkeret és külön felirat. */
+.phone.shots { width: 300px; max-width: 70vw; aspect-ratio: 1290 / 2796; padding: 0; border-radius: 28px; background: #0b0f0c; }
+.phone.shots .screen { border-radius: 28px; }
+.phone.shots + .arrow, .phone-row .arrow { align-self: center; }
+.sr-only { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.showcase .dots { margin-top: 18px; }

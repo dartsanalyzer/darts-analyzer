@@ -38,15 +38,14 @@
     <div class="showcase">
       <div class="phone-row">
         <button class="arrow" type="button" data-dir="-1" aria-label="Previous">‹</button>
-        <div class="phone" aria-roledescription="carousel">
-          <div class="island"></div>
+        <div class="phone shots" aria-roledescription="carousel">
           <div class="screen">
             <div class="track" id="track"></div>
           </div>
         </div>
         <button class="arrow" type="button" data-dir="1" aria-label="Next">›</button>
       </div>
-      <p class="caption" id="caption" aria-live="polite"></p>
+      <p class="caption sr-only" id="caption" aria-live="polite"></p>
       <div class="dots" id="dots"></div>
     </div>
   </section>
@@ -92,23 +91,16 @@
 <script>
 (function () {
   var slides = [
-    ["Lassítva, csontvázzal és a kezed útjával", "Slow motion with skeleton and hand path"],
-    ["Az eredmény a céloddal kezdődik", "Your result starts with your goal"],
-    ["Mondd meg, min dolgozol", "Tell it what you're working on"],
-    ["Minden fontos szám egy oldalon", "All the key numbers on one page"],
-    ["Minden köröd megmarad", "Every round is kept"],
-    ["Beépített pontszámláló kiszálló-javaslattal", "Built-in scorer with checkout suggestions"],
-    ["Felülnézeti rajz: hova tedd a telefont", "Top-view diagram: where to put the phone"],
-    ["Kezdőlap: index, szint, sorozat, heti cél", "Home: index, level, streak, weekly goal"],
-    ["Bemutató: a legutóbbi köröd egy pillantásra", "Tour: your latest round at a glance"],
-    ["Bemutató: egy koppintás az új körhöz", "Tour: one tap to a new round"],
-    ["Bemutató: felvétel és beállás-ellenőrzés", "Tour: recording with setup checks"],
-    ["Bemutató: a statisztikák", "Tour: your stats"],
-    ["Bemutató: a köreid visszanézése", "Tour: replaying your rounds"],
-    ["Bemutató: a pontszámláló", "Tour: the scorer"],
-    ["Bemutató: ingyenes vagy PRO", "Tour: free or PRO"],
-    ["Bemutató: a profilod", "Tour: your profile"],
-    ["Bemutató: súgó a pontos méréshez", "Tour: help for accurate measuring"]
+    ["Lásd minden dobásod lassítva", "See every throw in slow motion"],
+    ["PRO: az adataid a videón", "PRO: your data, right on the video"],
+    ["Tudd meg, mennyire egyformán dobsz", "Know how consistent you really are"],
+    ["PRO: könyök, ritmus, test – képkockánként", "PRO: elbow, rhythm, body – frame by frame"],
+    ["Lásd, hol változik a dobásod", "Spot where your throw changes"],
+    ["Elülső vagy hátsó kamera – te döntöd el", "Front or back camera – your choice"],
+    ["Mondd meg, mi zavar – az app ezt követi", "Tell it what bothers you – the app tracks it"],
+    ["Tedd le a telefont, és dobj", "Just put your phone down and throw"],
+    ["Minden számod egy helyen", "All your numbers in one place"],
+    ["Pontszámláló kiszálló-javaslattal", "Built-in scorer with checkouts"]
   ];
   var track = document.getElementById('track');
   var dots = document.getElementById('dots');
